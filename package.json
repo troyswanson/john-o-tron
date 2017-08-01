@@ -1,0 +1,21 @@
+{
+  "name": "john-o-tron",
+  "version": "0.0.1",
+  "description": "No Johns",
+  "main": "server.js",
+  "engines": {
+    "node": "8.x"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/troyswanson/john-o-tron.git"
+  },
+  "author": "Troy Swanson",
+  "license": "MIT"
+}
