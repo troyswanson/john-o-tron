@@ -6,10 +6,10 @@ No Johns
 
 The best way to work on this project is by [remixing](https://glitch.com/edit/#!/remix/john-o-tron) it on Glitch. There aren't any databases to manage or special backend services to run.
 
-If you want to run it on your own computer, that's pretty easy too. You just need node 8.x already installed.
+If you want to run it on your own computer, that's pretty easy too. You just need node 8.x installed.
 
 1. Get the code (clone from GitHub or download from Glitch)
-2. Run `npm install` to install Express
+2. Run `npm install` to install Koa
 3. Run `npm start` to start the server
 4. The server is listening at [127.0.0.1:3000](http://127.0.0.1:3000)
 

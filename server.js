@@ -1,27 +1,22 @@
-// server.js
-// the app starts here
-
 // init project
-var john = require('./john.js');
-var express = require('express');
+const logger = require('koa-logger')
+const serve = require('koa-static')
+const route = require('koa-route')
+const Koa = require('koa')
+const app = new Koa()
 
-// express app
-var app = express();
+const john = require('./john.js')
+
+// log requests
+app.use(logger())
 
 // serve static files
-app.use(express.static(__dirname + '/public'));
+app.use(serve(__dirname + '/public'))
 
-// homepage
-app.get("/", function (req, res) {
-  res.sendFile(__dirname + '/views/index.html');
-});
-
-// new john
-app.get("/john", function (req, res) {
-  res.send(john())
-});
+// serve a new john
+app.use(route.get('/john', ctx => {
+  ctx.body = john()
+}))
 
 // happy johns!
-var listener = app.listen(process.env.PORT || 3000, function () {
-  console.log('Running on port ' + listener.address().port);
-});
+app.listen(process.env.PORT || 3000)

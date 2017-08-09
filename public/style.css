@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-  color: blue;
+  color: turquoise;
 }
 
 blockquote {
@@ -23,17 +23,26 @@ blockquote > p {
 }
 
 button {
-  font-size: 1em;
+  font-size: 0.875em;
+  font-weight: 500;
   border-radius: 0.25em;
-  border: 1px solid grey;
-  padding: 0.25em 0.5em;
+  border: 2px solid black;
+  padding: 0.5em 1em;
   background-color: whitesmoke;
-  box-shadow: 0.125em 0.125em lightgray;
+  box-shadow: 0.25em 0.25em black;
   cursor: pointer;
 }
 
 button:hover {
+  box-shadow: 0.125em 0.125em black;
+}
+
+button:active {
   background-color: yellow;
+}
+
+button:focus {
+  outline: none;
 }
 
 footer {

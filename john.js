@@ -1,7 +1,7 @@
 var nouns = [
   'My eyes are',
   'The TV is',
-  'The Sun is',
+  'The sun is',
   'I am',
   'My fingers are',
   'My controller is',
@@ -24,7 +24,8 @@ var nouns = [
   'hungrybox is',
   'Hugs is',
   'D1 is',
-  'pr0g is'
+  'pr0g is',
+  'My girlfriend is'
 ];
 
 var problems = [
@@ -48,7 +49,9 @@ var problems = [
   'too random',
   'too far',
   'too smelly',
-  'broken'
+  'broken',
+  'too easy',
+  'creeping up behind me'
 ];
 
 var shuffle = function (array) {
